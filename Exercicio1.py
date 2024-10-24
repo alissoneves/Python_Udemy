@@ -2,9 +2,9 @@
 nome = 'João Mauro'
 sobrenome = 'Silveira'
 idade = 88
-ano_nascimento = 1914
-maior_idade = idade >= 20
-altura_metros = '1.79'
+ano_nascimento = 2022 - idade
+maior_idade = idade >= 18
+altura_metros = 1.79
 
 
 print ('Nome:', nome)
