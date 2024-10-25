@@ -8,3 +8,4 @@ senha = input('Digite sua senha: ')
     
 if not senha:
         print('Você não digitou sua senha, favor avaliar! ')
+
