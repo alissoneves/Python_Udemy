@@ -12,3 +12,6 @@ if passou_no_if is None:
 
 if passou_no_if is not None:
     print ('Passou no if')          
+
+
+    
