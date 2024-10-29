@@ -16,3 +16,6 @@ if vel_carro_pass_radar1:
 
 if local_carro >= (LOCAL_1 - RADAR_RANGE) and local_carro <= (LOCAL_1 + RADAR_RANGE) and vel_carro_pass_radar1:
     print ('Carro multado em radar 1')
+
+
+    
