@@ -1,8 +1,8 @@
-#Fazendo uma concatenação de listas 
+#Fazendo uma concatenação de listas com a função EXTEND.
 
-lista_a = [1, 2, 3]
+lista_aa = [1, 2, 3]
 lista_b = [4,5,6]
 lista_c = lista_a + lista_b
-lista_a.extend(lista_b)
+lista_aa.extend(lista_b)
 
-print (lista_a)
+print (lista_aa)
