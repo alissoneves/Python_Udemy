@@ -5,3 +5,4 @@ print(primeira_lista)
 print (segunda_lista)
 print (segunda_lista [0]) #acessando o bloco 0 da lista da variavel segunda_lista (123)
 
+
