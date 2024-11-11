@@ -1,5 +1,5 @@
 #Desempacotador em chamadas de métodos e funções
-
+#utilizando *nome da tupla, lista ou string você pega e mostra todos os valores
 
 string = 'ABCD'
 lista = ['Maria', 'Roger', 'Beatriz', 1,2,3,4]

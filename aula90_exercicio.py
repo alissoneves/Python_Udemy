@@ -26,8 +26,10 @@ while True:
         try:
             indice = int(indice_str)
             del lista[indice]
-        except: 
+        except TypeError: 
             print ('Não foi possível apagar esse índice, escolha outro!')
+        except ValueError: 
+            print ('Por Favor Digite um número inteiro!')
     elif opcao == 'l':
         os.system('cls')
         if len(lista) == 0:
