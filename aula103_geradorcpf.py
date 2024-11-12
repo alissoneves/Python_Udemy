@@ -24,7 +24,6 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-
 import random
 
 nove_digitos = ''
@@ -32,7 +31,6 @@ for i in range (9):
 
     nove_digitos += str(random.randint (0, 9))
     contador_regressivo_1 = 10
-
 
 resultado_digito_1 = 0 
 for digito_1 in nove_digitos:
@@ -44,7 +42,7 @@ digito_1 = digito_1 if digito_1 <= 9 else 0
 print (f'O primeiro dígito do seu CPF é:', digito_1)
 
 
-cpf_enviado = '74682489070'
+cpf_enviado = nove_digitos 
 dez_digitos = nove_digitos + str(digito_1)
 contador_regressivo_2 = 11
 
@@ -61,7 +59,10 @@ print (f'O segundo dígito do seu CPF é:', digito_2)
 cpf_check = f'{nove_digitos}{digito_1}{digito_2}'
 print (cpf_check)
 
+'''
 if cpf_check == cpf_enviado:
     print (f'CPF {cpf_enviado} Validado com sucesso!')
 else: 
     print (f'CPF {cpf_enviado} está incorreto, favor validar novamente')    
+
+'''
