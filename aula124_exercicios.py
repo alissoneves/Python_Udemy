@@ -17,7 +17,6 @@ perguntas = [
 ]
 qtd_acertos = 0
 for pergunta in perguntas:
-    
     print ('Pergunta: ', pergunta['Pergunta'])
     print()
 
@@ -25,27 +24,29 @@ for pergunta in perguntas:
     for i, opcao in enumerate(opcoes):
         print(f'{i})', opcao)
     print()
-    resposta_pessoa = input ('Digite sua resposta, baseado nas opções acima:')
+
+    resposta_pessoa = input ('Digite sua resposta, baseado nas opções acima: ')
   
     acertou = False
     resposta_pessoa_int = None
     qtd_opcoes = len(opcoes)
    
-
     if resposta_pessoa.isdigit():
         resposta_pessoa_int = int(resposta_pessoa)
 
-        if resposta_pessoa_int is not None:    
+    if resposta_pessoa_int is not None:    
+        if resposta_pessoa_int >= 0 and resposta_pessoa_int < qtd_opcoes:
+            if opcoes[resposta_pessoa_int] == pergunta['Resposta']:
+                    acertou = True      
+            print()
 
-            if resposta_pessoa_int >= 0 and resposta_pessoa_int < qtd_opcoes:
-     
-                if resposta_pessoa_int == pergunta['Resposta']:
-                    acertou = True
-                    print (f'Parabéns, a resposta correta é {pergunta['Resposta']}' 'você acertou sua respost!!')
-                    qtd_acertos += 1
-                else:
-                    acertou = False
-                    print ('Que pena, você errou a alternativa, tente novamente')
+    if acertou:
+        qtd_acertos += 1
+        print (f'Parabéns, a resposta correta é {pergunta['Resposta']}' ' ,e você acertou sua respost!!')    
+        print()
+    else:
+         print ('Que pena, você errou a alternativa, tente novamente')
+        
 
-                    print('Você acertou', qtd_acertos)
-                    print('de', len(perguntas), 'perguntas.')       
+print('Você acertou', qtd_acertos)
+print('de', len(perguntas), 'perguntas.')       
