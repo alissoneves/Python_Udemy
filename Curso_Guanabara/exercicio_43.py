@@ -20,6 +20,6 @@ elif imc > 30 and imc < 40:
     
     print (f'Seu IMC é no valor de: {imc:.1f}, você está OBESIDADE!')  
 
-elif imc >= 40: 
+elif imc >= 40:
     
     print (f'Seu IMC é no valor de: {imc:.1f}, você está OBESIDADE MÓRBIDA!')                  
