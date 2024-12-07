@@ -5,7 +5,7 @@ def multiplica(*args):
         total *= numero
     return total 
   
-multiplicador = multiplica(1811, 11, 3)
+multiplicador = multiplica(2, 2, 2)
 print (f'Valor da multiplicação: {multiplicador}')
 
 def par_impar(multiplicador): 
