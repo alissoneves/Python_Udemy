@@ -42,11 +42,11 @@ for pergunta in perguntas:
 
     if acertou:
         qtd_acertos += 1
-        print (f'Parabéns, a resposta correta é {pergunta['Resposta']}' ' ,e você acertou sua respost!!')    
+        print (f'Parabéns, a resposta correta é {pergunta['Resposta']}' ' ,e você acertou sua resposta!!')    
         print()
     else:
          print ('Que pena, você errou a alternativa, tente novamente')
         
 
-print('Você acertou', qtd_acertos)
-print('de', len(perguntas), 'perguntas.')       
+print (f'Você acertou', qtd_acertos, 'de', len(perguntas), 'perguntas.')
+  
